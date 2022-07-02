@@ -19,7 +19,7 @@ li {
 .weather-app {
   max-width: 600px;
   background-color: #335898;
-  margin: 30px auto;
+  margin: 30px auto 0;
   padding: 20px;
 }
 
@@ -64,4 +64,8 @@ li {
 
 .weather-forecast-temperature-min {
   color: #6491cd;
+}
+
+.code-link {
+  margin: 0 50px;
 }
