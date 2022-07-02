@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather-App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app shadow mb-5 rounded ">
+
+            <form id="search-form" class="row">
+                <div class="form-group col-6">
+                    <input id="city-input" type="search" class="form-control" autofocus autocomplete="off"
+                        placeholder="Tipe a city...">
+                </div>
+                <button type="submit" class="btn col-2">Search</button>
+                <button id="current" class="btn col-2">Current</button>
+
+            </form>
+
+
+            <h1 id="city"></h1>
+            <ul>
+                <li>Last updated: <span id="data"></span></li>
+                <li id="description"></li>
+            </ul>
+            <div class="description row">
+                <div class="col-6">
+                    <img id="icon" src="#" alt="">
+                    <span id="temperature"></span>
+                    <span class="units">
+                        <span class="metric">
+                            <a id="celsius-link" class="active" href="">°C</a>
+                        </span>
+                        |
+                        <span class="imperial">
+                            <a id="fahrenheit-link" href="">°F</a>
+                        </span>
+
+                    </span>
+
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            Humidity: <span id="humidity"></span>%
+                        </li>
+                        <li>
+                            Wind: <span id="wind"></span>km/h
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <small>
+                <a href="https://github.com/ok-sana-code/vanilla-weather-app" target="_blank">
+                    Open-source code
+                </a>
+                , by Oksana Shvets from
+                <a href="https://www.shecodes.io/" target=_blank>
+                    She Codes
+                </a>
+            </small>
+        </div>
+
+    </div>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
