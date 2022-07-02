@@ -29,9 +29,6 @@ li {
   color: white;
   margin-left: 10px;
 }
-/* .description {
- 
-} */
 
 #icon {
   position: relative;
@@ -54,4 +51,17 @@ li {
 .units .active {
   color: white;
   cursor: default;
+}
+
+.weather-forecast {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-min {
+  color: #6491cd;
 }
