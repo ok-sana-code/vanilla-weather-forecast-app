@@ -19,7 +19,7 @@ li {
 .weather-app {
   max-width: 600px;
   background-color: #335898;
-  margin: 20px auto 0;
+  margin: 20px auto;
   padding: 20px;
 }
 
@@ -67,5 +67,7 @@ li {
 }
 
 .code-link {
-  margin: 0 50px;
+  font-size: small;
+  text-align: center;
+  margin-bottom: 20px;
 }
